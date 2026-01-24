@@ -6,7 +6,6 @@ var companyId = "";
 var cId = "";
 var ptArr = []; // Declare ptArr globally
 
-
 function optionSelected () {
     var optionSelectedValue = document.getElementById("optionSelect").value;
     document.getElementById("ptFeedback").style.display = "none"
@@ -35,6 +34,9 @@ function submitToken() {
     let orgId = document.getElementById("orgId").value.trim();
     let companyId = document.getElementById("companyId").value.trim();
     let tagCompanyId = document.getElementById("tagCompanyId").value.trim();
+
+    var ptValue = "https://experience.adobe.com/#/@" + document.getElementById("companyId").value.split('0')[0] + "/sname:prod/platform/data-collection/tags/companies/" + document.getElementById("tagCompanyId").value + "/properties"
+    document.getElementById("ptManager").setAttribute("href", ptValue);
 
     let atFeedback = document.getElementById("atFeedback");
     let clientFeedback = document.getElementById("clientIdFeedback");
