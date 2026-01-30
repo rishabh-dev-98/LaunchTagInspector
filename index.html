@@ -35,7 +35,7 @@
           <div class="modal-body">
             <form class="needs-validation" novalidate>
               <div class="mb-3">
-                <div class="form-text">Please setup a project in Adobe developer console with Adobe Experience Launch API to generate the below credentials.</div>
+                <div class="form-text">Please setup a project in <a href="https://developer.adobe.com/console/projects" target="_blank">Adobe developer console</a> with Adobe Experience Launch API to generate the below credentials.</div>
               </div>
               <div class="mb-3">
                 <label for="clientId" class="col-form-label"><em>Client ID</em></label>
@@ -54,9 +54,9 @@
               <div class="mb-3">
                 <label for="companyId" class="col-form-label"><em>Global Company ID</em></label>
                 <input type="text" class="form-control" id="companyId" onclick="rsInputFocus()" required>
-                <div class="form-text">You can find your global company id highlighted in bold by navigating to Adobe Analytics UI - <strong><em>All Admin > Company Settings Home > API Access tab</em></strong></div>
+                <div class="form-text">You can find your global company id in the URL of adobe analytics UI. Example: "/@xyzapac/so:<strong><em>abcde17a</em></strong>/analytics/spa/#/workspace"</div>
                 <div class="invalid-feedback" id="companyIdFeedback" style="display: none;">
-                  <em>Please provide a valid company id value.</em>
+                  <em>Please provide a valid global company id value.</em>
                 </div>
               </div>
               <div class="mb-3">
